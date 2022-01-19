@@ -4,15 +4,16 @@ body{
     background-color: #cccccc;
 }
 
-section{
+body > section{
     margin-left: 20px;
 }
 
-header > h1{
+
+section > article > header > h1{
     font-size: 28px;
 }
 
-header > p{
+section > article > header > p{
     font-style: italic;
 }
 
@@ -21,7 +22,7 @@ section > article> p{
     font-size: 24px;
 }
 
-ul{
+nav ul{
     background-color: #444444;
     text-align: center;
     padding: 0px;
@@ -29,22 +30,26 @@ ul{
     list-style: none;
 }
 
-ul li{
+nav ul li{
+    text-align: center;
     display: inline-block;
-    font-size: 24px;
     line-height: 40px;
     height: 40px;
     padding: 20px;
 }
 
-ul li a{
+nav ul li a{
+    font-size: 24px;
     text-decoration: none;
     color: #ffffff;
 }
 
 footer{
     background-color: #444444;
-    color: #ffffff;
-    text-align: center;
-    padding: 10px;
+}
+
+footer > p {
+        padding: 10px;
+        color: #ffffff;
+        text-align: center;
 }
